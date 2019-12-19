@@ -1,1 +1,353 @@
-<p>home works!</p>
+<div class="header-container" [ngsReveal]="{ reset: false}">
+  <div class="logo-container">
+    <img src="../../assets/logo-femme.png" alt="" class="logo">
+  </div>
+</div>
+<div class="commande" [ngsReveal]="{ reset: false}">
+  <a href="#histoire" class="lien-header">Histoire &nbsp;&nbsp;&nbsp;</a> -
+  <a href="#cuisine" class="lien-header">&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;</a> -
+  <a href="#map" class="lien-header">&nbsp;&nbsp;&nbsp;Contact</a>
+</div>
+
+<div class="corps-container">
+  <div class="banner-container">
+    <h1 class="banner-text" id="histoire">Dame de<br>Coeur</h1>
+  </div>
+  <div class="rubrique-container" [ngsRevealSet]="{ reset:false}" [ngsInterval]="50" [ngsSelector]="'.rubrique-container'">
+    <div class="rubrique-title">
+      Notre histoire
+    </div>
+    <div class="rubrique-logo">
+      <img src="../../assets/logo-femme.png" alt="" class="logo-mini">
+    </div>
+    <div class="rubrique-text">
+      Le premier restaurant de la famille Olivia est situé dans les anciens et vénérables halls d'atelier d'Aker Brygge. Nous avons conservé le caractère historique des lieux; voici des plafonds solides et des murs de briques résistants - ce qui est parfaitement approprié au concept et à l'inspiration derrière ce restaurant particulier, à savoir Naples. Cela a un impact sur la pièce et l'intérieur. Toutes les cheminées et bougies contribuent également à créer l'atmosphère d'Olivia que nous connaissons si bien. <br> <br>
+      La salle à manger extérieure bénéficie d'un emplacement fantastique sur le quai avec vue sur le fjord et la forteresse d'Akershus. La zone est équipée de lampes chauffantes, couvertures, parapluies et auvents qui offrent une atmosphère chaleureuse et bonne, quelle que soit la météo. Les chaudes journées d'été, c'est l'endroit idéal pour dîner, avec vue sur la mer et la foule animée.
+    </div>
+  </div>
+  <div class="notre-dame-container">
+    <img src="../../assets/notre-dame.png" alt="" class="notre-dame">
+  </div>
+  <div class="paysage">
+    <img src="../../assets/notre-dame2.jpg" alt="" class="full-img">
+  </div>
+  <div class="rubrique-container">
+    <div class="rubrique-title">
+      Plus qu'un héritage, un devoir
+    </div>
+    <div class="rubrique-logo">
+      <img src="../../assets/logo-femme.png" alt="" class="logo-mini">
+    </div>
+    <div class="rubrique-text">
+      En mettant l'accent sur les ingrédients italiens, nous servons des pizzas, des pâtes et d'autres plats italiens - tous faits maison et avec un amour pour la cuisine italienne. Pizza italienne fine et croustillante frite dans un four en pierre, plats de pâtes classiques et antipasti - comme sur tous les menus de la famille Olivia. De plus, vous pouvez choisir parmi des plats de viande et de poisson servis comme les Italiens. Le restaurant dispose d'une cuisine ouverte afin que vous puissiez suivre les boulangers en action près du four en pierre. <br> <br>
+      Chez Olivia Aker Brygge, vous obtenez également un menu très spécial inspiré de la nourriture et des boissons napolitaines. Le chef Lukasz a lui-même voyagé et ramassé des recettes pour Menù Napoli, qui se compose de plats typiques de la région. En d'autres termes, vous pouvez obtenir un peu de Naples dans notre restaurant à Aker Brygge.
+    </div>
+  </div>
+  <div class="paysage">
+    <img src="../../assets/typique.jpg" alt="" class="full-img">
+  </div>
+  <div class="rubrique-container">
+    <div class="rubrique-title">
+      Un espace intime
+    </div>
+    <div class="rubrique-logo">
+      <img src="../../assets/logo-femme.png" alt="" class="logo-mini">
+    </div>
+    <div class="rubrique-text">
+      Bienvenue dans l'une des plus belles chambres séparées d'Oslo! Sala Privata est une pièce vitrée séparée avec un espace pour les fêtes fermées. Ici, nous pouvons tout organiser, des petits dîners intimes et informels et rencontrer jusqu'à 80 personnes. Nous avons notre propre entreprise et nos menus de réunion, mais surtout nous adaptons un événement qui offre une expérience italienne informelle, différente et authentique. La chambre ne coûte rien, vous ne payez que pour la nourriture et les boissons. Envoyez-nous une demande de réservation à booking@olivia.no. <br> <br>
+      À côté de Sala Privata a également une salle de vin séparée où nous pouvons organiser des dégustations de vin pour les petits et les grands groupes.
+    </div>
+  </div>
+  <div class="paysage">
+    <img src="../../assets/cuisine.jpg" alt="" class="full-img">
+  </div>
+  <div class="menu-container" id="cuisine" [ngsRevealSet]="{ reset:true}" [ngsInterval]="50" [ngsSelector]="'.menu-title'">
+    <div class="menu-title">
+      <div class="menu-title-text">Créations froides</div>
+    </div>
+    <div class="menu-contenu" [ngsRevealSet]="{ reset:true}" [ngsInterval]="100" [ngsSelector]="'.plat'">
+      <div class="plat-left">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Chaud-froid de sole contisé de truffe noire</div>
+            <div class="number">53</div>
+          </div>
+          <div class="plat-text">Minéralité de céleri et salinité de coquillages Pistaches</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Émincés à cru, Saint-Pierre mariné au persil</div>
+            <div class="number">42</div>
+          </div>
+          <div class="plat-text">Brunoise multicolore et herbes</div>
+        </div>
+      </div>
+      <div class="plat-right">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Terrine de gibier à plumes, en gelée au vin de Xérès</div>
+            <div class="number">50</div>
+          </div>
+          <div class="plat-text">Toast baguette</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Huîtres spéciales, granité herbacé</div>
+            <div class="number">65</div>
+          </div>
+          <div class="plat-text">Tout petits croûtons citronnés</div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-title">
+      <div class="menu-title-text">Créations chaudes</div>
+    </div>
+    <div class="menu-contenu">
+      <div class="plat-left">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Soufflé au fromage, à la vapeur</div>
+            <div class="number">45</div>
+          </div>
+          <div class="plat-text">
+            <div>Foie gras croquant et sauce Albufera (À la truffe blanche d’Alba)</div>
+          </div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Quenelles de noix de coquilles Saint-Jacques</div>
+            <div class="number">56</div>
+          </div>
+          <div class="plat-text">Duxelles et crus de Paris</div>
+        </div>
+      </div>
+      <div class="plat-right">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Mousseline de brochet, en pain brioché</div>
+            <div class="number">51</div>
+          </div>
+          <div class="plat-text">Extraction de céleri</div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-title">
+      <div class="menu-title-text">Créations végétales</div>
+    </div>
+    <div class="menu-contenu">
+      <div class="plat-left">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Épinards monstrueux de Viroflay, en soupe</div>
+            <div class="number">19</div>
+          </div>
+          <div class="plat-text">
+            <div>À la scamorza, râpé de noix de muscade brûlée</div>
+          </div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Fondant d’aubergine épicé, coulis d’avocat</div>
+            <div class="number">21</div>
+          </div>
+          <div class="plat-text">Petits croûtons dorés</div>
+        </div>
+      </div>
+      <div class="plat-right">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Petites betteraves, en amertume de chocolat</div>
+            <div class="number">23</div>
+          </div>
+          <div class="plat-text">Pistou d’olive noire et ricotta</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Sandwich de feuilles d’épinard</div>
+            <div class="number">19</div>
+          </div>
+          <div class="plat-text">Pomme croustillante en son sein</div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-title">
+      <div class="menu-title-text">Pâtes et Ravioles</div>
+    </div>
+    <div class="menu-contenu">
+      <div class="plat-left">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Tortelli de courge</div>
+            <div class="number">31</div>
+          </div>
+          <div class="plat-text">Hommage à Nadia et Giovanni Santini Beurre fondu et parmesan</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Tagliatelles sans gluten, extraction maïs au caviar</div>
+            <div class="number">96</div>
+          </div>
+          <div class="plat-text">Peau de poulet crustillante</div>
+        </div>
+      </div>
+      <div class="plat-right">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Ravioles potagères, extraction des mêmes légumes</div>
+            <div class="number">26</div>
+          </div>
+          <div class="plat-text">Huile d'olive vierge</div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-title">
+      <div class="menu-title-text">Poissons et Viandes</div>
+    </div>
+    <div class="menu-contenu">
+      <div class="plat-left">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Feuille à feuille de barbue, braisé à la vapeur</div>
+            <div class="number">51</div>
+          </div>
+          <div class="plat-text">Lait fermenté et condiments</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Filets de rouget, en éventail croustillant</div>
+            <div class="number">46</div>
+          </div>
+          <div class="plat-text">Duxelles de cèpes</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Turbot nacré, nage aux perles colorées</div>
+            <div class="number">55</div>
+          </div>
+          <div class="plat-text">Volée d’herbes aromatiques</div>
+        </div>
+      </div>
+      <div class="plat-right">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Wagyu grade 4, en vrai Strogonoff</div>
+            <div class="number">86</div>
+          </div>
+          <div class="plat-text">Pailles de pommes de terre fleurées au paprika</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Boudin noir et côtes de cochon de lait, à la plancha</div>
+            <div class="number">67</div>
+          </div>
+          <div class="plat-text">Salade d’herbes folles</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Dos de chevreuil rôti au genièvre</div>
+            <div class="number">49</div>
+          </div>
+          <div class="plat-text">Champignons marinés, gels et condiments</div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-title">
+      <div class="menu-title-text">Desserts</div>
+    </div>
+    <div class="menu-contenu lastMenu">
+      <div class="plat-left">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Tuile « boudoir », aux fraises des bois</div>
+            <div class="number">22</div>
+          </div>
+          <div class="plat-text">Mousse de lait frappée</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Parfait, glacé au café et crème pistache salé</div>
+            <div class="number">22</div>
+          </div>
+          <div class="plat-text">Brioche fleurée</div>
+        </div>
+      </div>
+      <div class="plat-right">
+        <div class="plat">
+          <div class="plat-title">
+            <div>Glace de chèvre frais</div>
+            <div class="number">22</div>
+          </div>
+          <div class="plat-text">Baies noires assaisonnées de fleurs Gelée aux perles d’huile d’olive</div>
+        </div>
+        <div class="plat">
+          <div class="plat-title">
+            <div>Plombière de poire, jus frais</div>
+            <div class="number">22</div>
+          </div>
+          <div class="plat-text">Gavottes pincées</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="paysage2">
+    <img src="../../assets/table.jpg" alt="" class="full-img">
+  </div>
+  <div class="rubrique-container">
+    <div class="rubrique-title">
+      Plus qu'un héritage, un devoir
+    </div>
+    <div class="rubrique-logo">
+      <img src="../../assets/logo-femme.png" alt="" class="logo-mini">
+    </div>
+    <div class="rubrique-text">
+      En mettant l'accent sur les ingrédients italiens, nous servons des pizzas, des pâtes et d'autres plats italiens - tous faits maison et avec un amour pour la cuisine italienne. Pizza italienne fine et croustillante frite dans un four en pierre, plats de pâtes classiques et antipasti - comme sur tous les menus de la famille Olivia. De plus, vous pouvez choisir parmi des plats de viande et de poisson servis comme les Italiens. Le restaurant dispose d'une cuisine ouverte afin que vous puissiez suivre les boulangers en action près du four en pierre. <br> <br>
+      Chez Olivia Aker Brygge, vous obtenez également un menu très spécial inspiré de la nourriture et des boissons napolitaines. Le chef Lukasz a lui-même voyagé et ramassé des recettes pour Menù Napoli, qui se compose de plats typiques de la région. En d'autres termes, vous pouvez obtenir un peu de Naples dans notre restaurant à Aker Brygge.
+    </div>
+  </div>
+<!--  <div class="map-container" id="contact">-->
+<!--    <agm-map class="map"-->
+<!--             [latitude]="latitude"-->
+<!--             [longitude]="longitude"-->
+<!--             [zoom]="zoom">-->
+<!--      <agm-marker-->
+<!--        [latitude]="latitude"-->
+<!--        [longitude]="longitude"></agm-marker>-->
+<!--    </agm-map>-->
+<!--  </div>-->
+  <div id="map-container">
+    <div class="map" id="map" class="match-parent"></div>
+  </div>
+  <div class="contact-container">
+    <div class="contact-left" [ngsRevealSet]="{reset: true}" [ngsInterval]="50" [ngsSelector]="'.text2'">
+      <div class="text2 contact-title">Contact</div>
+      <div class="text2 logo-mini2"><img src="../../assets/logo-femme.png" alt="" class="logo-mini2"></div>
+      <div class="text2 contact-text1">
+        10 quai de Montebello,<br>75005 Paris
+      </div>
+      <div class="text2 contact-text2">
+        01 09 56 27 96<br>contact@dame-de-coeur.fr
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-right-slim" [ngsRevealSet]="{reset: true}" [ngsInterval]="50" [ngsSelector]="'.text'">
+        <div class="text contact-title2">
+          <strong>Horraires d'ouverture et évènements</strong>
+        </div>
+        <div class="contact-text3">
+          <div class="text">LUN-MER 11:00-22:30<br></div>
+          <div class="text">JEU-VEN 11:00–00:00<br></div>
+          <div class="text">SAM 12:00–23:30<br></div>
+          <div class="text">DIM 12:00–22:30<br><br></div>
+
+          <div class="text"><strong>REVEILLON DE NOEL</strong><br></div>
+          <div class="text">23. DECENBRE : 11:00–17:00<br></div>
+          <div class="text">24. OG 25. DECEMBRE : FERME<br></div>
+          <div class="text">26. TIL 30. DECEMBRE : 12:00–23:00<br><br></div>
+          <div class="text"><strong>NOUVEL AN</strong><br></div>
+          <div class="text">31. DECEMBRE: 11:30–00:30<br></div>
+          <div class="text">1. JANVIER : 12:00–23:00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
