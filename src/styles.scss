@@ -29,11 +29,12 @@ p {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #A6C4C4;
+  background: #D3AEA2;
   border-radius: 10px;
+  transition: 1s;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0E7C7C;
+  background: #a1624c;
 }
