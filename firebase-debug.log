@@ -1,0 +1,70 @@
+[debug] [2019-12-19T18:04:24.324Z] ----------------------------------------------------------------------
+[debug] [2019-12-19T18:04:24.326Z] Command:       /home/linuxbrew/.linuxbrew/Cellar/node/12.8.0/bin/node /home/linuxbrew/.linuxbrew/bin/firebase deploy
+[debug] [2019-12-19T18:04:24.326Z] CLI Version:   7.11.0
+[debug] [2019-12-19T18:04:24.326Z] Platform:      linux
+[debug] [2019-12-19T18:04:24.326Z] Node Version:  v12.8.0
+[debug] [2019-12-19T18:04:24.326Z] Time:          Thu Dec 19 2019 19:04:24 GMT+0100 (Central European Standard Time)
+[debug] [2019-12-19T18:04:24.326Z] ----------------------------------------------------------------------
+[debug] [2019-12-19T18:04:24.326Z] 
+[debug] [2019-12-19T18:04:24.330Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-19T18:04:24.330Z] > authorizing via signed-in user
+[debug] [2019-12-19T18:04:24.330Z] [iam] checking project damecoeur-4cffc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-12-19T18:04:24.331Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-12-19T18:04:24.332Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-12-19T18:04:24.459Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-19T18:04:24.525Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/damecoeur-4cffc:testIamPermissions  
+
+[debug] [2019-12-19T18:04:25.332Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-19T18:04:25.334Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/damecoeur-4cffc  
+ 
+[debug] [2019-12-19T18:04:25.742Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'damecoeur-4cffc'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-12-19T18:04:25.747Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/damecoeur-4cffc/versions  
+
+[debug] [2019-12-19T18:04:27.483Z] <<< HTTP RESPONSE 200
+[info] i  hosting[damecoeur-4cffc]: beginning deploy...
+[info] i  hosting[damecoeur-4cffc]: found 24 files in dist
+[debug] [2019-12-19T18:04:27.605Z] [hosting] hash cache [ZGlzdA] stored for 24 files
+[debug] [2019-12-19T18:04:27.605Z] [hosting][hash queue][FINAL]
+[debug] [2019-12-19T18:04:27.605Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/damecoeur-4cffc/versions/2b1fd868bedabcb8:populateFiles  
+ <request body omitted>
+[debug] [2019-12-19T18:04:29.326Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-19T18:04:29.336Z] [hosting][populate queue][FINAL]
+[debug] [2019-12-19T18:04:29.336Z] [hosting] uploads queued: 2
+[debug] [2019-12-19T18:04:31.476Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[damecoeur-4cffc]: file upload complete
+[debug] [2019-12-19T18:04:31.477Z] [hosting] deploy completed after 3992ms
+[debug] [2019-12-19T18:04:31.524Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "damecoeur-4cffc"
+    },
+    "site": "damecoeur-4cffc",
+    "version": "sites/damecoeur-4cffc/versions/2b1fd868bedabcb8"
+  }
+]
+[info] i  hosting[damecoeur-4cffc]: finalizing version...
+[debug] [2019-12-19T18:04:31.525Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/damecoeur-4cffc/versions/2b1fd868bedabcb8?updateMask=status  
+
+[debug] [2019-12-19T18:04:32.501Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-19T18:04:32.502Z] [hosting] finalized version for damecoeur-4cffc:
+[info] ✔  hosting[damecoeur-4cffc]: version finalized
+[info] i  hosting[damecoeur-4cffc]: releasing new version...
+[debug] [2019-12-19T18:04:32.502Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/damecoeur-4cffc/releases?version_name=sites/damecoeur-4cffc/versions/2b1fd868bedabcb8  
+
